@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>
+		Lab1
+	</title>
+</head>
+<body>
+	<nav class="nav">
+		<a href="index.html">Main page<a>
+		<a href="lists.html">Lists<a>
+		<a href="forms.html">Forms<a>
+	</nav>
+	
+	<form>
+		<fieldset>
+			<legend>Create your pokemon</legend>
+			<label for="name">Name</label>
+			<input id="name"><br>
+			<label for="color">Color</label>
+			<select name="color" id="color">
+				<option value="red">Red</option>
+				<option value="orange">Orange</option>
+				<option value="yellow">Yellow</option>
+				<option value="green">Green</option>
+				<option value="blue">Blue</option>
+				<option value="black">Black</option>
+			</select><br>
+			<label for="ability">Ability</label>
+			<textarea id="ability" rows="1" cols="20"></textarea><br>
+		</fieldset>
+		<fieldset>
+			<legend>Speed</legend>
+			<label for="pokemon"><input name="speed" type="radio">High</label>
+			<label for="pokemon"><input name="speed" type="radio">Low</label>
+		</fieldset>	
+	</form>
+</body>
+</html>

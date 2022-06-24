@@ -1,0 +1,43 @@
+body {
+	background-image: url('images/background2.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.nav a{
+	font-size: 14px;
+	text-transform: uppercase;
+	position: relative;
+	left: 40%;
+	color: black;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	text-decoration: none;
+}
+
+.list {
+	position: relative;
+	left: 40%;
+	padding: 15px;
+	margin: 0 15px;
+	display: inline-block;
+}
+
+.nav a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+table#pokemons {
+	background: rgba(255,255,255,0.2);
+}
+
+p[class] {
+	background: rgba(255,255,255,0.2);
+}
+
+p::first-line {
+	color: red;
+}
