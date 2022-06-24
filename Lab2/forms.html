@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>
+		Lab2
+	</title>
+</head>
+<body>	
+	<form>
+		<fieldset>
+			<legend>Check pokemon color</legend>
+			<label for="name">Name</label>
+			<select name="name" onchange="clear_p()">
+				<option value="pikachu">Pikachu</option>
+				<option value="bulbasaur">Bulbasaur</option>
+				<option value="charmeleon">Charmeleon</option>
+				<option value="wartortle">Wartortle</option>
+			</select><br>
+			<label for="color">Color</label>
+			<select name="color" onchange="clear_p()">
+				<option value="red">Red</option>
+				<option value="orange">Orange</option>
+				<option value="yellow">Yellow</option>
+				<option value="green">Green</option>
+				<option value="blue">Blue</option>
+				<option value="black">Black</option>
+			</select><br>
+			<div>
+				<button onclick="check_color(); return false;">Check color</button>
+				<script>
+					function clear_p() {
+						var para = document.querySelector('p');
+						para.textContent = '';
+					}
+					
+					function check_color() {
+						var name = document.querySelector('select[name="name"]').value;
+						var color = document.querySelector('select[name="color"]').value;
+						var para = document.querySelector('p');
+						
+						if (name === 'pikachu') {
+							if (color === 'yellow') {
+								para.textContent = 'You guessed right!';
+								} else {
+									para.textContent = 'You did not guess';
+									}
+						}
+						else if (name === 'bulbasaur') {
+							if (color === 'green') {
+								para.textContent = 'You guessed right!';
+								} else {
+									para.textContent = 'You did not guess';
+									}
+						}
+						else if (name === 'charmeleon') {
+							if (color === 'red') {
+								para.textContent = 'You guessed right!';
+								} else {
+									para.textContent = 'You did not guess';
+									}
+						}
+						else if (name === 'wartortle') {
+							if (color === 'blue') {
+								para.textContent = 'You guessed right!';
+								} else {
+									para.textContent = 'You did not guess';
+									}
+						}
+					}
+				</script>
+				<p></p>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
